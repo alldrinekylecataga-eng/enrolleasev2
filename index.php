@@ -1,6 +1,6 @@
 <?php
-require_once 'includes/db.php';
-require_once 'includes/auth.php';
+require_once __DIR__ . "/db.php";
+rrequire_once __DIR__ . "/auth.php";
 
 if (isLoggedIn()) {
     header('Location: ' . ($_SESSION['role'] === 'admin'
